@@ -1,0 +1,46 @@
+* {
+    font-family: 'Playfair Display SC', serif;
+}
+body {
+    background-color: aliceblue;
+    background-size: cover;
+    /*height: 100%;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://www.walldevil.com/wallpapers/a13/background-ground-images-back.jpg");
+}
+.fancy-header {
+    color: purple;
+    /* single line comment */
+    text-decoration: underline;
+    text-align: center;
+}
+h2, h1 {
+    color: gold;
+    text-decoration: underline;
+}
+ol, ul {
+    list-style-image: url("http://hiteknova.com/themes/public/default/chat/emoji/dist/img/tieba/5.jpg");
+}
+table {
+    border: 2px solid purple;
+}
+td {
+    text-align: left;
+    padding: 10px 0px 10px 15px;
+}
+tr:hover {
+    background-color: #f5f5f5;
+}
+a:link {
+    color: purple;
+}
+a:visited {
+    color: yellow;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: blue;
+}
