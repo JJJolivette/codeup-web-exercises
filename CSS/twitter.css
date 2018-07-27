@@ -90,9 +90,10 @@ a {
 .media{
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid #848487;
+    border-bottom: 1px solid rgb(221, 221, 221);
     padding: .5em;
     overflow: auto;
+    margin-bottom: 0.1em;
     /*float: left;*/
 }
 .media-image{
