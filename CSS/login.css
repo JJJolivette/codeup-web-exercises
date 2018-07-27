@@ -45,13 +45,14 @@ fieldset {
 
 .form-label {
     font-weight: bold;
+    display: block;
     /* The text of a label must be bold */
 }
 
 .form-control {
     margin: 4px 0px;
     padding: .5em;
-    width: calc(100% - 100px);
+    width: calc(80% + 140px);
 
     /* There must be 4px on top of the text and below the text of an input with this class */
     /* It should have a separation of .5em from elements on top of it and below it */
@@ -70,11 +71,16 @@ fieldset {
     border: 1px solid grey;
     color: white;
     font-weight: bold;
+    width: 100%;
 }
 
 .btn-block {
     /* This element should use 100% of the width */
-    width: 100px;
+    width:calc(80% + 155px)
+}
+
+#fixThisShit{
+    transform: translatex(3.5%);
 }
 
 /*DAMN THIS WAS A COOL LITTEL ASSIGNMENT! I LOVE CSS! ;-) */
