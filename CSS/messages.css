@@ -6,8 +6,19 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
+:root{
+    --bg-info: rgb(225, 225, 225);
+    --text-info: rgb(207, 243, 218);
+    --bg-success: rgb(252, 251, 201);
+    --text-success: rgb(249, 212, 215);
+    --txt-info: rgb(62, 54, 151);
+    --txt-success: rgb(47, 107, 54);
+    --txt-warning: rgb(144, 126, 40);
+    --txt-error: rgb(127, 28, 46);
+}
+
 .message{
-    color: rgb(88, 80, 170);
+    /*color: rgb(88, 80, 170);*/
     border-radius: 10px;
     margin: 10px;
     height: 20px;
@@ -17,19 +28,23 @@ body, html {
 }
 
 .message-info {
-    background-color: rgb(205, 222, 252);
+    background-color: var(--bg-info);
+    color: var(--txt-info);
 }
 
 .message-success {
-    background-color: rgb(207, 243, 218);
+    background-color: var(--text-info);
+    color: var(--txt-success);
 }
 
 .message-warning {
-    background-color: rgb(252, 251, 201);
+    background-color: var(--bg-success);
+    color: var(--txt-warning);
 }
 
 .message-error {
-    background-color: rgb(249, 212, 215);
+    background-color: var(--text-success);
+    color: var(--txt-error);
 }
-/*Chris@geekdom.com
-hit him up about the camp for children @ Haven*/
+
+/*bg-info, text-info, bg-success, text-success*/
