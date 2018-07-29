@@ -1,5 +1,8 @@
-html{
+html {
     box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 .rowOne:after, .rowTwo:after, .rowThree:after, .rowFour:after, .rowFive:after {
@@ -21,52 +24,52 @@ html{
     background-color: red;
     margin: 1em 0;
     color: white;
-    width: 48%;
+    width: 50%;
 }
 .column.one-half:nth-child(odd){
     background-color: red;
     margin: 1em 0;
     color: white;
-    width: 48%;
+    width: 50%;
 }
 /* +++++++++++++++ SECOND ROW +++++++++++++++*/
 .column.one-third:nth-child(odd){
     background-color: blue;
     margin: 1em 0;
     color: white;
-    width: 31.45%;
+    width: 33.3%;
 }
 .column.one-third:nth-child(even) {
     background-color: blue;
     color: white;
     margin: 1em 0;
-    width: 31.45%;
+    width: 33.3%;
 }
 /* +++++++++++++++ THIRD ROW +++++++++++++++*/
 .column.one-fourth:nth-child(even){
     background-color: deeppink;
     margin: 1em 0;
     color: white;
-    width: 23.18%;
+    width: 25%;
 }
 .column.one-fourth:nth-child(odd) {
     background-color: deeppink;
     margin: 1em 0;
     color: white;
-    width: 23.18%;
+    width: 25%;
 }
 /* +++++++++++++++ FOURTH ROW +++++++++++++++*/
 .column.one-eight:nth-child(even){
     background-color: darkorange;
     margin: 1em 0;
     color: white;
-    width: 10.775%;
+    width: 12.5%;
 }
 .column.one-eight:nth-child(odd) {
     background-color: darkorange;
     color: white;
     margin: 1em 0;
-    width: 10.775%;
+    width: 12.5%;
 }
 
 /* +++++++++++++++ FINAL ROW +++++++++++++++*/
@@ -74,26 +77,26 @@ html{
     background-color: darkorange;
     margin: 1em 0;
     color: white;
-    width: 10.775%;
+    width: 12.5%;
 }
 .column.mixedEight:nth-child(odd) {
     background-color: darkorange;
     margin: 1em 0;
     color: white;
-    width: 10.775%;
+    width: 12.5%;
 }
 .column.mixedFourth:nth-child(odd) {
     background-color: deeppink;
     margin: 1em 0;
     color: white;
-    width: 23.18%;
+    width: 25%;
 }
 .column.mixedHalf{
     background-color: red;
     margin: 1em 0;
     color: white;
-    width: 48%;
+    width: 50%;
 }
 
-/*????????????????? DON'T UNDERSTAND THE SECOND HALF OF THE ASSIGNMENT WHEN IT BEGINS TO ASK YOU TO REFACTOR THE ??????????????????????? */
+ /*I KNOW UNDERSTAND THE BORDER-BOX CONCEPT BUT STILL NOT CLEAR WHAT THE SECOND HALF OF THE ASSIGNMENT IS REQUESTING OF ME REGARDING REFACTORING GRID VIA HTML */
 
