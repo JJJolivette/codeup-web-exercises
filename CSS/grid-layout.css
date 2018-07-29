@@ -1,0 +1,99 @@
+html{
+    box-sizing: border-box;
+}
+
+.rowOne:after, .rowTwo:after, .rowThree:after, .rowFour:after, .rowFive:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.column{
+    float: left;
+    padding: 10px;
+    border: black solid .1em;
+    max-width: 100%;
+}
+
+/* +++++++++++++++ FIRST ROW +++++++++++++++*/
+.column.one-half:nth-child(even){
+    background-color: red;
+    margin: 1em 0;
+    color: white;
+    width: 48%;
+}
+.column.one-half:nth-child(odd){
+    background-color: red;
+    margin: 1em 0;
+    color: white;
+    width: 48%;
+}
+/* +++++++++++++++ SECOND ROW +++++++++++++++*/
+.column.one-third:nth-child(odd){
+    background-color: blue;
+    margin: 1em 0;
+    color: white;
+    width: 31.45%;
+}
+.column.one-third:nth-child(even) {
+    background-color: blue;
+    color: white;
+    margin: 1em 0;
+    width: 31.45%;
+}
+/* +++++++++++++++ THIRD ROW +++++++++++++++*/
+.column.one-fourth:nth-child(even){
+    background-color: deeppink;
+    margin: 1em 0;
+    color: white;
+    width: 23.18%;
+}
+.column.one-fourth:nth-child(odd) {
+    background-color: deeppink;
+    margin: 1em 0;
+    color: white;
+    width: 23.18%;
+}
+/* +++++++++++++++ FOURTH ROW +++++++++++++++*/
+.column.one-eight:nth-child(even){
+    background-color: darkorange;
+    margin: 1em 0;
+    color: white;
+    width: 10.775%;
+}
+.column.one-eight:nth-child(odd) {
+    background-color: darkorange;
+    color: white;
+    margin: 1em 0;
+    width: 10.775%;
+}
+
+/* +++++++++++++++ FINAL ROW +++++++++++++++*/
+.column.mixedEight:nth-child(even){
+    background-color: darkorange;
+    margin: 1em 0;
+    color: white;
+    width: 10.775%;
+}
+.column.mixedEight:nth-child(odd) {
+    background-color: darkorange;
+    margin: 1em 0;
+    color: white;
+    width: 10.775%;
+}
+.column.mixedFourth:nth-child(odd) {
+    background-color: deeppink;
+    margin: 1em 0;
+    color: white;
+    width: 23.18%;
+}
+.column.mixedHalf{
+    background-color: red;
+    margin: 1em 0;
+    color: white;
+    width: 48%;
+}
+
+/*????????????????? DON'T UNDERSTAND THE SECOND HALF OF THE ASSIGNMENT WHEN IT BEGINS TO ASK YOU TO REFACTOR THE ??????????????????????? */
+
