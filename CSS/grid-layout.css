@@ -15,87 +15,87 @@ html {
 .column{
     float: left;
     padding: 10px;
-    border: black solid .1em;
-    max-width: 100%;
+    /*border: black solid .1em;*/
+    /*max-width: 100%;*/
 }
 
 /* +++++++++++++++ FIRST ROW +++++++++++++++*/
 .column.one-half:nth-child(even){
-    background-color: red;
+    /*background-color: red;*/
     margin: 1em 0;
-    color: white;
+    /*color: white;*/
     width: 50%;
 }
 .column.one-half:nth-child(odd){
-    background-color: red;
+    /*background-color: red;*/
     margin: 1em 0;
-    color: white;
+    /*color: white;*/
     width: 50%;
 }
 /* +++++++++++++++ SECOND ROW +++++++++++++++*/
 .column.one-third:nth-child(odd){
-    background-color: blue;
+    /*background-color: blue;*/
     margin: 1em 0;
-    color: white;
+    /*color: white;*/
     width: 33.3%;
 }
 .column.one-third:nth-child(even) {
-    background-color: blue;
-    color: white;
+    /*background-color: blue;*/
+    /*color: white;*/
     margin: 1em 0;
     width: 33.3%;
 }
 /* +++++++++++++++ THIRD ROW +++++++++++++++*/
 .column.one-fourth:nth-child(even){
-    background-color: deeppink;
+    /*background-color: deeppink;*/
     margin: 1em 0;
-    color: white;
+    /*color: white;*/
     width: 25%;
 }
 .column.one-fourth:nth-child(odd) {
-    background-color: deeppink;
+    /*background-color: deeppink;*/
     margin: 1em 0;
-    color: white;
+    /*color: white;*/
     width: 25%;
 }
 /* +++++++++++++++ FOURTH ROW +++++++++++++++*/
 .column.one-eight:nth-child(even){
-    background-color: darkorange;
+    /*background-color: darkorange;*/
     margin: 1em 0;
-    color: white;
+    /*color: white;*/
     width: 12.5%;
 }
 .column.one-eight:nth-child(odd) {
-    background-color: darkorange;
+    /*background-color: darkorange;*/
     color: white;
     margin: 1em 0;
     width: 12.5%;
 }
 
 /* +++++++++++++++ FINAL ROW +++++++++++++++*/
-.column.mixedEight:nth-child(even){
-    background-color: darkorange;
+.column.oneEight:nth-child(even){
+    /*background-color: darkorange;*/
     margin: 1em 0;
-    color: white;
+    /*color: white;*/
     width: 12.5%;
 }
-.column.mixedEight:nth-child(odd) {
-    background-color: darkorange;
+.column.oneEight:nth-child(odd) {
+    /*background-color: darkorange;*/
     margin: 1em 0;
-    color: white;
+    /*color: white;*/
     width: 12.5%;
 }
 .column.mixedFourth:nth-child(odd) {
-    background-color: deeppink;
+    /*background-color: deeppink;*/
     margin: 1em 0;
-    color: white;
+    /*color: white;*/
     width: 25%;
 }
-.column.mixedHalf{
-    background-color: red;
+.column.threeFourth{
+    /*background-color: red;*/
     margin: 1em 0;
-    color: white;
-    width: 50%;
+    /*color: white;*/
+    width: 75%;
 }
 
  /*I KNOW UNDERSTAND THE BORDER-BOX CONCEPT BUT STILL NOT CLEAR WHAT THE SECOND HALF OF THE ASSIGNMENT IS REQUESTING OF ME REGARDING REFACTORING GRID VIA HTML*/
