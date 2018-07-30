@@ -2,11 +2,12 @@
 <!-- saved from url=(0054)http://java.codeup.com/examples/css/media-queries.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="CSS/media-queries.css">
+    <link rel="stylesheet" href="CSS/grid-layout.css">
     <title>Media Queries</title>
 </head>
 <body>
     <div class="alert-info hidden-on-desktop">
-        <a href="#">Skip to main content</a>
+        <a id="skip" href="#">Skip to main content</a>
     </div>
     <h1>Company</h1>
     <nav>
@@ -18,21 +19,24 @@
         </ul>
     </nav>
     <div class="header-img">
-        <img src="./mediaQueries_files/400" alt="">
+        <img id="surfer" src="./mediaQueries_files/400" alt="image of surfer preparing to stand up on board and catch a developing wave">
     </div>
-    <section id="main" class="main">
+    <section id="main" class="main column threeFourth">
         <h2>Main Section</h2>
         <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
     </section>
-    <section class="sub-section">
+    <section class="sub-section column one-fourth">
         <h2>Sub-section</h2>
         <p>Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
     </section>
     <footer>
-        <p>(c) 2018 All rights reserved</p>
         <div id="social-media-links">
-
+            <img src="http://www.stickpng.com/assets/images/58e91965eb97430e819064f5.png" alt="facebook logo">
+            <img src="https://www.freeiconspng.com/uploads/linkedin-icon-0.png" alt="linkedin logo">
+            <img src="https://png.pngtree.com/element_our/md/20180301/md_5a9797d18f418.png" alt="instagram logo">
+            <img src="https://www.freeiconspng.com/uploads/black-pinterest-icon-logo-png-28.png" alt="pinterest logo">
         </div>
+        <p>(c) 2018 All rights reserved</p>
     </footer>
 
 
