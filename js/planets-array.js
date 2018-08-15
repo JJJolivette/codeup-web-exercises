@@ -27,8 +27,7 @@
     console.log(planets);
 
     console.log('Removing "The Sun" from the beginning of the planets array.');
-    console.log(planets.splice(planets.length-1));
-    console.log(planets.pop());
+    console.log(planets.splice(0,1));
     console.log(planets);
 
 
