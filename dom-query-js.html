@@ -25,34 +25,60 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+
+<!--TODO: Add 4 buttons to the page-->
+
+<button type="button" id="button1">BUTTON 1</button>
+<button type="button" id="button2">BUTTON 2</button>
+<button type="button" id="button3">BUTTON 3</button>
+<button type="button" id="button4">BUTTON 4</button>
+
 <script>
     (function() {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        var mainHeader = document.getElementById("main-header");
+
+        // var mainHeader = document.getElementById("main-header");
+        //     mainHeader.innerHTML = "Javascript is Cool";
+
+        var button1 = document.getElementById("button1");
+        button1.addEventListener("click", function(){
+            var mainHeader = document.getElementById("main-header");
             mainHeader.innerHTML = "Javascript is Cool";
+        });
 
         // TODO: Uncomment the next line and get the sub header element by id
         // TODO: Set the text color of subHeader to blue
-        var subHeader = document.getElementById("sub-header");
+        var button2 = document.getElementById("button2");
+        button2.addEventListener("click", function(){
+            var subHeader = document.getElementById("sub-header");
             subHeader.style.color = "blue";
+        });
+
 
         // TODO: Uncomment the next line and get all list items
         // TODO: Set text color on every other list item to grey
-        var listItems = document.getElementsByTagName("li");
+        var button3 = document.getElementById("button3");
+        button3.addEventListener("click", function(){
+            var listItems = document.getElementsByTagName("li");
 
-        for(var i = 0; i <= listItems.length; i+=2){
-            console.log(i);
-            // if (listItems[i] % 2 === 0){
+            for(var i = 0; i <= listItems.length; i+=2){
+                console.log(i);
+                // if (listItems[i] % 2 === 0){
                 listItems[i].style.color = "grey";
-            // }
-        }
+                // }
+            }
+        });
 
 
         // TODO: Set text color of li with dbid = 1 to blue
-        var singleListItem = document.getElementsByTagName("li")[0];
-        singleListItem.style.color ="blue";
+        var button4 = document.getElementById("button4");
+        button4.addEventListener("click", function(){
+            document.querySelector("li[data-dbid='1']").style.color ="blue";
+        });
+        // var singleListItem = document.getElementsByTagName("li")[i];
+        // singleListItem.style.color ="blue";
 
 
 
@@ -61,6 +87,8 @@
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs[0].innerHTML = "Mission Accomplished!";
+
+
     })();
 </script>
 </body>
