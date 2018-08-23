@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GOOGLE MAPS API - CODEUP EXERCISE</title>
+    <style type="text/css">
+        /*Makes the map fill it's container. */
+        #map-canvas {
+            width: 100%;
+            height: 100%;
+        }
+        /*Makes the page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- div to hold map -->
+<div id="map-canvas"></div>
+
+<!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJiTWxg85A1hAfkuHXU6EFEGUkQ6fB4mw"></script>
+
+<!-- Script to show address on map -->
+<script type="text/javascript">
+    var marker;
+
+    (function() {
+        "use strict";
+
+        // Set our map options
+        var mapOptions = {
+            // Set the zoom level
+            zoom:18,
+
+            // This sets the center of the map on steak48
+            center: {
+                lat:  29.741911,
+                lng: -95.453213
+            }
+        };
+
+        var steak48 = mapOptions.center;
+
+        // Render the map
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        // Include code from previous example
+
+        // Set our address to geocode
+        var address = "4444 Westheimer Rd, Houston, TX 77027";
+
+        // Initiation of the geocoder object
+        var geocoder = new google.maps.Geocoder();
+
+        // Geocodes our address
+        geocoder.geocode({ "address": address }, function(results, status) {
+
+            // Checks for a successful result
+            if (status == google.maps.GeocoderStatus.OK) {
+
+                // Recenters the map over the address
+                map.setCenter(results[0].geometry.location);
+            } else {
+
+                // Will show an error message with the status if our request fails
+                alert("Geocoding was not successful - STATUS: " + status);
+            }
+        });
+
+
+        // Created an info window with the name of the restaurant.
+
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">steak48</h1>'+
+            '<div id="bodyContent">'+
+            // content about the restaurant
+            '<p><b>Steak48</b>, also referred to as <b>Jonathan\'s hideaway</b>, Steak 48 serves the best steak, seafood,' +
+            ' & shellfish in a modern fine dining setting. Let us pour you a glass of wine from our 3000 bottle vault today!</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+
+            marker = new google.maps.Marker({
+                map: map,
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+                position: {lat: 29.741911, lng: -95.453213}
+            });
+            marker.addListener('click', toggleBounce);
+        // }
+
+        function toggleBounce() {
+            if (marker.getAnimation() !== null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
+        }
+
+
+
+        var marker = new google.maps.Marker({
+            position: steak48,
+            map: map,
+            title: 'Jonathan\'s Fat + Happy Place (Steak48)'
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+
+
+        // This example adds a marker to indicate the position of Steak 48 in Houston, Texas.
+        var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+        var beachMarker = new google.maps.Marker({
+            position: {lat: 29.741911, lng: -95.453213},
+            map: map,
+            icon: image
+        });
+
+
+    })();
+</script>
+</body>
